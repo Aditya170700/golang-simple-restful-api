@@ -15,13 +15,14 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/Aditya170700/gorestfulapi/app"
-	"github.com/Aditya170700/gorestfulapi/controller"
-	"github.com/Aditya170700/gorestfulapi/helper"
-	"github.com/Aditya170700/gorestfulapi/middleware"
-	"github.com/Aditya170700/gorestfulapi/model/domain"
-	"github.com/Aditya170700/gorestfulapi/repository"
-	"github.com/Aditya170700/gorestfulapi/service"
+	"sudutkampus/gorestfulapi/app"
+	"sudutkampus/gorestfulapi/controller"
+	"sudutkampus/gorestfulapi/helper"
+	"sudutkampus/gorestfulapi/middleware"
+	"sudutkampus/gorestfulapi/model/domain"
+	"sudutkampus/gorestfulapi/repository"
+	"sudutkampus/gorestfulapi/service"
+
 	"github.com/go-playground/validator/v10"
 )
 

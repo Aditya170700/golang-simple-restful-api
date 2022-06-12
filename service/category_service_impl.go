@@ -4,11 +4,12 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/Aditya170700/gorestfulapi/exception"
-	"github.com/Aditya170700/gorestfulapi/helper"
-	"github.com/Aditya170700/gorestfulapi/model/domain"
-	"github.com/Aditya170700/gorestfulapi/model/web"
-	"github.com/Aditya170700/gorestfulapi/repository"
+	"sudutkampus/gorestfulapi/exception"
+	"sudutkampus/gorestfulapi/helper"
+	"sudutkampus/gorestfulapi/model/domain"
+	"sudutkampus/gorestfulapi/model/web"
+	"sudutkampus/gorestfulapi/repository"
+
 	"github.com/go-playground/validator/v10"
 )
 

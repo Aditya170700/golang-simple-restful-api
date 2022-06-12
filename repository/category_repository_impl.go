@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/Aditya170700/gorestfulapi/helper"
-	"github.com/Aditya170700/gorestfulapi/model/domain"
+	"sudutkampus/gorestfulapi/helper"
+	"sudutkampus/gorestfulapi/model/domain"
 )
 
 type CategoryRepositoryImpl struct {

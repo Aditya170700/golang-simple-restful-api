@@ -1,8 +1,9 @@
 package app
 
 import (
-	"github.com/Aditya170700/gorestfulapi/controller"
-	"github.com/Aditya170700/gorestfulapi/exception"
+	"sudutkampus/gorestfulapi/controller"
+	"sudutkampus/gorestfulapi/exception"
+
 	"github.com/julienschmidt/httprouter"
 )
 

@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/Aditya170700/gorestfulapi/helper"
+	"sudutkampus/gorestfulapi/helper"
 )
 
 func NewDB() *sql.DB {

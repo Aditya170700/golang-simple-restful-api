@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 
-	"github.com/Aditya170700/gorestfulapi/model/web"
+	"sudutkampus/gorestfulapi/model/web"
 )
 
 type CategoryService interface {

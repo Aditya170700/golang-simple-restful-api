@@ -1,8 +1,8 @@
 package helper
 
 import (
-	"github.com/Aditya170700/gorestfulapi/model/domain"
-	"github.com/Aditya170700/gorestfulapi/model/web"
+	"sudutkampus/gorestfulapi/model/domain"
+	"sudutkampus/gorestfulapi/model/web"
 )
 
 func ToCategoryResponse(category domain.Category) web.CategoryResponse {

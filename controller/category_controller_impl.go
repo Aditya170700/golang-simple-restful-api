@@ -4,9 +4,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/Aditya170700/gorestfulapi/helper"
-	"github.com/Aditya170700/gorestfulapi/model/web"
-	"github.com/Aditya170700/gorestfulapi/service"
+	"sudutkampus/gorestfulapi/helper"
+	"sudutkampus/gorestfulapi/model/web"
+	"sudutkampus/gorestfulapi/service"
+
 	"github.com/julienschmidt/httprouter"
 )
 

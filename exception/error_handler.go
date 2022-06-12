@@ -3,8 +3,9 @@ package exception
 import (
 	"net/http"
 
-	"github.com/Aditya170700/gorestfulapi/helper"
-	"github.com/Aditya170700/gorestfulapi/model/web"
+	"sudutkampus/gorestfulapi/helper"
+	"sudutkampus/gorestfulapi/model/web"
+
 	"github.com/go-playground/validator/v10"
 )
 

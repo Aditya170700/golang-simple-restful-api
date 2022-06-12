@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/Aditya170700/gorestfulapi/model/domain"
+	"sudutkampus/gorestfulapi/model/domain"
 )
 
 type CategoryRepository interface {
