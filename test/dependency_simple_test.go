@@ -1,14 +1,20 @@
 package test
 
 import (
-	"fmt"
 	"sudutkampus/gorestfulapi/dependency"
-	"sudutkampus/gorestfulapi/helper"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestSimpleService(t *testing.T) {
-	simpleService, err := dependency.InitializedService()
-	helper.PanicIfError(err)
-	fmt.Println(simpleService.Error)
+	simpleService, err := dependency.InitializedService(false)
+	assert.False(t, simpleService.Error)
+	assert.Nil(t, err)
+}
+
+func TestSimpleServiceError(t *testing.T) {
+	simpleService, err := dependency.InitializedService(true)
+	assert.NotNil(t, err)
+	assert.Nil(t, simpleService)
 }

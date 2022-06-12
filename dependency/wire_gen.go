@@ -8,8 +8,8 @@ package dependency
 
 // Injectors from injector.go:
 
-func InitializedService() (*SimpleService, error) {
-	simpleRepository := NewSimpleRepository()
+func InitializedService(isError bool) (*SimpleService, error) {
+	simpleRepository := NewSimpleRepository(isError)
 	simpleService, err := NewSimpleService(simpleRepository)
 	if err != nil {
 		return nil, err
