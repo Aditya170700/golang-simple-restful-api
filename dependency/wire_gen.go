@@ -6,6 +6,10 @@
 
 package dependency
 
+import (
+	"github.com/google/wire"
+)
+
 // Injectors from injector.go:
 
 func InitializedService(isError bool) (*SimpleService, error) {
@@ -23,3 +27,19 @@ func InitializedDatabaseRepository() *DatabaseRepository {
 	databaseRepository := NewDatabaseRepository(postgreeSQL, mongoDB)
 	return databaseRepository
 }
+
+func InitializedFooBarService() *FooBarService {
+	fooRepository := NewFooRepository()
+	fooService := NewFooService(fooRepository)
+	barRepository := NewBarRepository()
+	barService := NewBarService(barRepository)
+	fooBarService := NewFooBarService(fooService, barService)
+	return fooBarService
+}
+
+// injector.go:
+
+// grouping using provider set dependency
+var fooSet = wire.NewSet(NewFooRepository, NewFooService)
+
+var barSet = wire.NewSet(NewBarRepository, NewBarService)
